@@ -22,7 +22,7 @@
                     <div class="col-md-4">
                         <!--todo-->
                         <div class="example-container">
-                            <h2>TO DO <span *ngIf="tasks.length > 0">{{tasks.length}}</span></h2>
+                            <h2 class="head-title">TO DO <span *ngIf="tasks.length > 0">{{tasks.length}}</span></h2>
                             <div
                               cdkDropList
                               [cdkDropListData]="tasks"
@@ -40,7 +40,7 @@
                     <div class="col-md-4">
                        <!--in progress--> 
                        <div class="example-container">
-                        <h2>IN PROGRESS <span *ngIf="tasks.length > 0">{{tasks.length}}</span></h2>
+                        <h2 class="head-title">IN PROGRESS <span *ngIf="inprogress.length > 0">{{inprogress.length}}</span></h2>
                         <div
                           cdkDropList
                           [cdkDropListData]="inprogress"
@@ -58,7 +58,7 @@
                     <div class="col-md-4">
                       <!--done-->
                       <div class="example-container">
-                        <h2>COMPLETED <span *ngIf="tasks.length > 0">{{tasks.length}}</span></h2>
+                        <h2 class="head-title">COMPLETED <span *ngIf="done.length > 0">{{done.length}}</span></h2>
                         <div
                           cdkDropList
                           [cdkDropListData]="done"
